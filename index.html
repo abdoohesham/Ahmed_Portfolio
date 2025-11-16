@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Rabie - Graphic Designer</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body class="dark-mode">
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Ahmed<span>.</span></div>
+        <div class="nav-links">
+          <a href="#about" class="nav-link active">ABOUT</a>
+          <a href="#projects" class="nav-link">PROJECTS</a>
+          <a href="#skills" class="nav-link">SKILLS</a>
+          <a href="#contact" class="nav-link">CONTACT</a>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="cv-btn">CV</button>
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center">
+          <button class="theme-toggle mobile-menu-btn" onclick="toggleTheme()">
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <a href="#about" onclick="toggleMobileMenu()">ABOUT</a>
+          <a href="#projects" onclick="toggleMobileMenu()">PROJECTS</a>
+          <a href="#skills" onclick="toggleMobileMenu()">SKILLS</a>
+          <a href="#contact" onclick="toggleMobileMenu()">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-greeting">👋 HI, I'M AHMED RABIE</div>
+          <h1 class="hero-title">
+            Graphic<br />
+            <span class="highlight">Designer</span>
+          </h1>
+          <p class="hero-description">
+            Passionate graphic designer specializing in food and product
+            photography, advertising campaigns, and brand identity. Creating
+            visuals that drive engagement and sales with dramatic lighting and
+            strategic composition.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="scrollToSection('projects')">
+              VIEW PROJECTS
+            </button>
+            <button class="btn-secondary">DOWNLOAD CV</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-circle">
+            <img
+              src="ahmed.png"
+              alt="Ahmed Rabie"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="decorative-blob blob-1"></div>
+          <div class="decorative-blob blob-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+  <div class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-underline"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-image">
+          <img
+            src="pizza1.jpg"
+            alt="Pizza Campaign"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Pizza & Food Advertising</h3>
+          <p class="project-description">
+            Experience flavor like never before. Savor tender cuts of meat
+            coated in rich, spicy sauce, served over perfectly fluffed rice.
+            A dish crafted to ignite your appetite from the very first look.
+            Bold taste. Premium quality. Pure satisfaction.
+          </p>
+          <button class="source-btn">
+            VIEW DESIGN
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img
+            src="dessert1.png"
+            alt="Dessert Campaign"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Pistachio Donut</h3>
+          <p class="project-description">
+            Indulge in luxury with every bite. A silky-smooth glazed donut
+            crowned with crunchy pistachios—crafted to perfection and made
+            to tempt. Elegant. Fresh. Unforgettable. Treat yourself to the
+            sweetness you deserve.
+          </p>
+          <button class="source-btn">
+            VIEW DESIGN
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img
+            src="perfume2.jpg"
+            alt="Perfume Campaign"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Blue Perfume</h3>
+          <p class="project-description">
+            Unleash your presence. A bold, icy-blue fragrance designed for
+            those who command the room. Striking design, long-lasting scent,
+            and an aura that speaks before you do. This is more than
+            perfume—it’s power in a bottle.
+          </p>
+          <button class="source-btn">
+            VIEW DESIGN
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-underline"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <p class="skill-name">Adobe Photoshop</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">✏️</div>
+            <p class="skill-name">Adobe Illustrator</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📷</div>
+            <p class="skill-name">Product Photography</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎯</div>
+            <p class="skill-name">Brand Identity</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📱</div>
+            <p class="skill-name">Social Media Design</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🖨️</div>
+            <p class="skill-name">Print Design</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🍕</div>
+            <p class="skill-name">Food Photography</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📢</div>
+            <p class="skill-name">Advertising Campaigns</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <div class="section-underline"></div>
+        </div>
+        <div class="contact-grid">
+          <a href="tel:01126674045" class="contact-card">
+            <div class="contact-icon">
+              <svg
+                width="28"
+                height="28"
+                fill="none"
+                stroke="#6366f1"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+            </div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">01126674045</p>
+          </a>
+
+          <a href="mailto:ahmedfitory847@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg
+                width="28"
+                height="28"
+                fill="none"
+                stroke="#6366f1"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <p class="contact-label">Email</p>
+            <p
+              class="contact-value"
+              style="font-size: 0.875rem; word-break: break-all"
+            >
+              ahmedfitory847@gmail.com
+            </p>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ahmed-rabie-4a7a60302/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+            <div class="contact-icon">
+              <svg
+                width="28"
+                height="28"
+                fill="none"
+                stroke="#6366f1"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">Ahmed Rabie</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <footer>
+      <p>&copy; 2024 Ahmed Rabie. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
