@@ -166,6 +166,14 @@ nav {
   padding: 0.5rem;
 }
 
+.dark-mode .mobile-menu-btn svg {
+  stroke: #ffffff;
+}
+
+.light-mode .mobile-menu-btn svg {
+  stroke: #0f172a;
+}
+
 .mobile-menu {
   display: none;
 }
