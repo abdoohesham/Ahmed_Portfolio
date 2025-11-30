@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmed Rabie - Graphic Designer</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="dark-mode">
     <nav>
@@ -18,6 +17,7 @@
           <a href="#contact" class="nav-link">CONTACT</a>
           <button class="theme-toggle" onclick="toggleTheme()">
             <svg
+              class="sun-icon"
               width="20"
               height="20"
               fill="none"
@@ -35,8 +35,24 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
+            <svg
+              class="moon-icon"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </button>
-          <button class="cv-btn">CV</button>
+          <a
+            href="https://www.behance.net/ombegamer"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><button class="behance-btn">Behance</button></a
+          >
         </div>
         <div style="display: flex; gap: 0.5rem; align-items: center">
           <button class="theme-toggle mobile-menu-btn" onclick="toggleTheme()">
@@ -103,7 +119,6 @@
             <button class="btn-primary" onclick="scrollToSection('projects')">
               VIEW PROJECTS
             </button>
-            <button class="btn-secondary">DOWNLOAD CV</button>
           </div>
         </div>
         <div class="hero-image">
@@ -121,119 +136,164 @@
     </section>
 
     <section id="projects">
-  <div class="section-container">
-    <div class="section-header">
-      <h2 class="section-title">Projects</h2>
-      <div class="section-underline"></div>
-    </div>
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <div class="project-image">
-          <img
-            src="pizza1.jpg"
-            alt="Pizza Campaign"
-            style="width: 100%; height: 100%; object-fit: cover"
-          />
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-underline"></div>
+          <a
+            href="https://www.behance.net/ombegamer/projects"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="more-projects-btn">
+              View More Projects
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="project-content">
-          <h3 class="project-title">Pizza & Food Advertising</h3>
-          <p class="project-description">
-            Experience flavor like never before. Savor tender cuts of meat
-            coated in rich, spicy sauce, served over perfectly fluffed rice.
-            A dish crafted to ignite your appetite from the very first look.
-            Bold taste. Premium quality. Pure satisfaction.
-          </p>
-          <button class="source-btn">
-            VIEW DESIGN
-            <svg
-              width="16"
-              height="16"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </button>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="pizza1.jpg"
+                alt="Pizza Campaign"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pizza & Food Advertising</h3>
+              <p class="project-description">
+                Experience flavor like never before. Savor tender cuts of meat
+                coated in rich, spicy sauce, served over perfectly fluffed rice.
+                A dish crafted to ignite your appetite from the very first look.
+                Bold taste. Premium quality. Pure satisfaction.
+              </p>
+              <a
+                href="https://www.behance.net/gallery/233614723/Social-media-posts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="source-btn">
+                  VIEW DESIGN
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="dessert1.png"
+                alt="Dessert Campaign"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pistachio Donut</h3>
+              <p class="project-description">
+                Indulge in luxury with every bite. A silky-smooth glazed donut
+                crowned with crunchy pistachios—crafted to perfection and made
+                to tempt. Elegant. Fresh. Unforgettable. Treat yourself to the
+                sweetness you deserve.
+              </p>
+              <a
+                href="https://www.behance.net/gallery/230276233/Social-media-multi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="source-btn">
+                  VIEW DESIGN
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="perfume2.jpg"
+                alt="Perfume Campaign"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Blue Perfume</h3>
+              <p class="project-description">
+                Unleash your presence. A bold, icy-blue fragrance designed for
+                those who command the room. Striking design, long-lasting scent,
+                and an aura that speaks before you do. This is more than
+                perfume—it’s power in a bottle.
+              </p>
+              <a
+                href="https://www.behance.net/gallery/231309319/Perfume-designs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="source-btn">
+                  VIEW DESIGN
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="project-card">
-        <div class="project-image">
-          <img
-            src="dessert1.png"
-            alt="Dessert Campaign"
-            style="width: 100%; height: 100%; object-fit: cover"
-          />
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Pistachio Donut</h3>
-          <p class="project-description">
-            Indulge in luxury with every bite. A silky-smooth glazed donut
-            crowned with crunchy pistachios—crafted to perfection and made
-            to tempt. Elegant. Fresh. Unforgettable. Treat yourself to the
-            sweetness you deserve.
-          </p>
-          <button class="source-btn">
-            VIEW DESIGN
-            <svg
-              width="16"
-              height="16"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-image">
-          <img
-            src="perfume2.jpg"
-            alt="Perfume Campaign"
-            style="width: 100%; height: 100%; object-fit: cover"
-          />
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Blue Perfume</h3>
-          <p class="project-description">
-            Unleash your presence. A bold, icy-blue fragrance designed for
-            those who command the room. Striking design, long-lasting scent,
-            and an aura that speaks before you do. This is more than
-            perfume—it’s power in a bottle.
-          </p>
-          <button class="source-btn">
-            VIEW DESIGN
-            <svg
-              width="16"
-              height="16"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <section id="skills">
       <div class="section-container">
@@ -285,7 +345,7 @@
           <div class="section-underline"></div>
         </div>
         <div class="contact-grid">
-          <a href="tel:01126674045" class="contact-card">
+          <a href="tel:+20 150 727 2347" class="contact-card">
             <div class="contact-icon">
               <svg
                 width="28"
