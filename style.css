@@ -810,4 +810,15 @@ footer {
     position: static;
     margin-top: 1rem;
   }
+
+  /* Make sure theme toggle is visible on mobile */
+  .theme-toggle {
+    display: flex;
+  }
+
+  /* Ensure icons are properly sized on mobile */
+  .theme-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
 }
